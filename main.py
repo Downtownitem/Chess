@@ -1,5 +1,13 @@
 import Board as b
 
+"""
+Chess program by:
+    - Karen Llanos
+    - Carlos Lopez
+    - Daniel Martinez
+    - Alejandra Valencia
+"""
+
 board = b.Board()
 
 for row in board.get_board():
