@@ -6,6 +6,9 @@ class King(pc.Piece):
     def __init__(self):
         self.name = 'king'
 
+    def __str__(self):
+        return self.name + ' ' + self.team
+
     """
     direction:
     - "left-up"
@@ -45,6 +48,9 @@ class Queen(pc.Piece):
 
     def __init__(self):
         self.name = 'queen'
+
+    def __str__(self):
+        return self.name + ' ' + self.team
 
     """
     direction:
@@ -89,6 +95,9 @@ class Bishop(pc.Piece):
     def __init__(self):
         self.name = 'bishop'
 
+    def __str__(self):
+        return self.name + ' ' + self.team
+
     """
     direction:
     - "left-up"
@@ -121,6 +130,9 @@ class Pawn(pc.Piece):
         self.name = 'pawn'
         self.first_movement = True
 
+    def __str__(self):
+        return self.name + ' ' + self.team
+
     def move(self, movement):
         if (self.first_movement and movement == 2) or movement == 1:
             self.first_movement = False
@@ -139,6 +151,9 @@ class Knight(pc.Piece):
 
     def __init__(self):
         self.name = 'knight'
+
+    def __str__(self):
+        return self.name + ' ' + self.team
 
     """
     first_direction:
@@ -189,6 +204,8 @@ class Knight(pc.Piece):
                     self.x -= 2
                     self.y += 1
 
+            return True
+
         else:
             return False
 
@@ -197,6 +214,9 @@ class Rook(pc.Piece):
 
     def __init__(self):
         self.name = 'rook'
+
+    def __str__(self):
+        return self.name + ' ' + self.team
 
     """
     direction:
