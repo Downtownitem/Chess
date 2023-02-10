@@ -8,7 +8,6 @@ Chess program by:
     - Alejandra Valencia
 """
 
-
 board = b.Board()
 
 for row in board.get_board():
